@@ -1,0 +1,5 @@
+PlayersList.allow({
+  remove: function(userId, docs){
+    return true
+  }
+})
