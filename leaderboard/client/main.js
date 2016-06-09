@@ -10,5 +10,9 @@ Template.leaderboard.helpers({
 });
 
 if(Meteor.isClient){
-console.log("Hello client");
+  Template.leaderboard.events({
+    'click .player': function(){
+      console.log("You clicked an li element");
+    }
+  });
 }
